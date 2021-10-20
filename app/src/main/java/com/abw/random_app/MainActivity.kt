@@ -163,6 +163,11 @@ class MainActivity : AppCompatActivity() {
                 startActivityForResult(intent, 1)
                 true
             }
+            R.id.range -> {
+                val intent = Intent(this, RangeActivity::class.java)
+                startActivityForResult(intent, 1)
+                true
+            }
             R.id.load -> {
                 val intent = Intent(this, LoadList::class.java)
                 startActivityForResult(intent, 0)
